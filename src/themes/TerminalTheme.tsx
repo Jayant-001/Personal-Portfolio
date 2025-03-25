@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Terminal, Github, Database, Cloud, Pocket as Docker, Brain, Code, Briefcase, GraduationCap, Mail, Award, ExternalLink } from 'lucide-react';
-import ProjectModal from './ProjectModal';
+import { useState, useEffect } from 'react';
+import { Terminal, Github, Database, Cloud, Brain, Code, Briefcase, GraduationCap, Mail, Award, ExternalLink } from 'lucide-react';
 import { Project, projects } from '../data/projects';
 import { experiences } from '../data/experiences';
 import { profiles } from '../data/profiles';

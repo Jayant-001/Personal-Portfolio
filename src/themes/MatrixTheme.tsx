@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Terminal, Database, Cloud, Cpu, Code, Briefcase, GraduationCap, Mail, Github, Award, ExternalLink } from 'lucide-react';
 import ProjectModal from './ProjectModal';
 import { Project, projects } from '../data/projects';

@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { Binary, Box, Layers, Workflow, Zap, Code, Database, Cloud, Cpu, Briefcase, GraduationCap, Mail, Github, Award, ExternalLink } from 'lucide-react';
-import ProjectModal from './ProjectModal';
+import { useState } from 'react';
+import { Box, Layers, Zap, Code, Database, Cloud, Briefcase, GraduationCap, Mail, Github, Award, ExternalLink } from 'lucide-react';
 import { Project, projects } from '../data/projects';
 import { experiences } from '../data/experiences';
 import { profiles } from '../data/profiles';

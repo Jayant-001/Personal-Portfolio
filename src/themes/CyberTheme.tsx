@@ -1,4 +1,3 @@
-import React from 'react';
 import { Shield, Code, Cpu, Network, Lock } from 'lucide-react';
 
 const CyberTheme = () => {
