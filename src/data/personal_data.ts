@@ -41,7 +41,7 @@ export const social = [
   },
   {
     name: "Twitter",
-    url: "",
+    url: "https://x.com/jayant_2k1",
   },
   {
     name: "Email",
