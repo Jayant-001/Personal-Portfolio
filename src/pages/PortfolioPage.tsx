@@ -286,6 +286,7 @@ const PortfolioPage = () => {
             </div>
             <div className="pl-6 space-y-2">
               {social
+              .filter(item => item.name !== 'Email')
                 .map((social, index) => (
                   <div className="flex" key={index} title={social.url}>
                     <a
@@ -300,6 +301,21 @@ const PortfolioPage = () => {
                   </div>
                 ))}
             </div>
+            <div className="pl-6 mt-2">
+                <span
+                  onClick={() =>
+                    window.open(
+                      `mailto:${social[social.length - 1].url}`,
+                      "_blank"
+                    )
+                  }
+                  rel="noopener noreferrer"
+                  className="cursor-pointer flex items-center gap-2 text-blue-400 hover:underline"
+                >
+                  <ExternalLink className="w-3 h-3" />
+                  {social[social.length - 1].name}
+                </span>
+              </div>
           </div>
         </div>
       </div>
