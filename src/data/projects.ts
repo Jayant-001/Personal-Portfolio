@@ -1,5 +1,7 @@
 import recommendationProject from "../assets/recommendation_system.png";
 import pocketLibrary from "../assets/pocket_library_project.gif";
+import urlShortner from '../assets/url_shortner.avif'
+import pocketCloud from '../assets/pocket-cloud.png'
 
 export interface Project {
   id: number;
@@ -73,8 +75,25 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Jayant-001/Recommendation-System-NextJS",
   },
   {
+    id: 4,
+    title: "Redis Clone",
+    shortDescription:
+      "Build my own Redis (client + server) with basic key-value store and data snapshoting functionality.",
+    description:
+      "A lightweight Redis clone built using Node.js with basic key-value store functionality. The project aims to demonstrate the core concepts of Redis and key-value stores.",
+    image: recommendationProject,
+    technologies: ["Node.js", "JavaScript", "http server"],
+    features: [
+      "In-memory key-value store",
+      "Support for strings, lists, and sets",
+      "Basic Redis commands",
+      "Persistence using JSON file storage",
+    ],
+    githubUrl: "https://github.com",
+  },
+  {
     id: 3,
-    title: "Pocket Library - An Interactive Quiz-Based Learning Platform",
+    title: "Pocket Library - A Quiz-Based Learning Platform",
     shortDescription:
       "A learning platform that makes learning easy and more competitive with quiz-based exercises for language learning and progress tracking.",
     description: `Pocket Library is an interactive quiz-based learning platform that helps users practice and learn different languages. The platform offers features such as user authentication, performance tracking, a user leaderboard, and language preference selection. Admins can add new questions, and users can view detailed test reports to track their learning progress.`,
@@ -101,6 +120,62 @@ export const projects: Project[] = [
     ],
     demoUrl: "https://pocket-library.vercel.app", // Link to live demo
     githubUrl: "https://github.com/Jayant-001/Language-Learning-App", // GitHub repository URL
+  },
+  {
+    id: 4,
+    title: "URL Shortener Project",
+    shortDescription: "A URL shortener web application that generates short links, provides analytics, and utilizes Redis caching for faster performance.",
+    description: `The URL Shortener project allows users to generate short URLs for long links. It features Redis caching to improve performance and provides analytics to track the usage of short URLs. The application also ensures seamless redirection from short URLs to their corresponding long URLs.`,
+    image: urlShortner, // Add an image URL if available
+    technologies: [
+      "Next.js",
+      "Tailwind CSS",
+      "React.js",
+      "React Query",
+      "Axios",
+      "IO Redis",
+      "React Hot Toast",
+      "Node.js",
+      "nanoid",
+      "MongoDB",
+      "Redis",
+      "ESLint"
+    ],
+    features: [
+      "Short URL Generation",
+      "Redis Caching for faster performance",
+      "Seamless Redirection to long URLs",
+      "Analytics for tracking clicks on short URLs",
+      "Environment Variable Configuration for Redis and MongoDB"
+    ],
+    demoUrl: "https://shorturl-01.vercel.app", // Live demo URL
+    githubUrl: "https://github.com/Jayant-001/URL-Shortener" // GitHub repository URL
+  },
+  {
+    id: 5,
+    title: "Pocket Cloud - Cloud File Manager",
+    shortDescription: "A cutting-edge cloud file management platform that enables seamless file organization, upload, and management with Google authentication.",
+    description: `Pocket Cloud is a web application designed to streamline file and folder management on the cloud. With features like folder creation, file upload, nested folder organization, Google authentication, and easy file management, Pocket Cloud provides an intuitive and efficient way to handle your digital assets.`,
+    image: pocketCloud,
+    technologies: [
+      "Next.js",
+      "React.js",
+      "Firebase",
+      "NextAuth",
+      "Google OAuth",
+      "Tailwind CSS",
+      "DaisyUI"
+    ],
+    features: [
+      "Folder Creation and File Upload",
+      "Nested Folder Support",
+      "Usage Limits and File Categorization",
+      "Google Authentication for secure login",
+      "File Management: Delete and Download files",
+      "User-friendly UI designed with DailyUI principles"
+    ],
+    demoUrl: "https://pocket-cloud.vercel.app", // Demo link
+    githubUrl: "https://github.com/Jayant-001/Cloud-File-Manager" // GitHub repository link
   },
   {
     id: 1,
@@ -181,21 +256,8 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/yourusername/cloud-platform",
   },
-  {
-    id: 4,
-    title: "Redis Clone",
-    shortDescription:
-      "Build my own Redis (client + server) with basic key-value store and data snapshoting functionality.",
-    description:
-      "A lightweight Redis clone built using Node.js with basic key-value store functionality. The project aims to demonstrate the core concepts of Redis and key-value stores.",
-    image: recommendationProject,
-    technologies: ["Node.js", "JavaScript", "http server"],
-    features: [
-      "In-memory key-value store",
-      "Support for strings, lists, and sets",
-      "Basic Redis commands",
-      "Persistence using JSON file storage",
-    ],
-    githubUrl: "https://github.com",
-  },
+  // Rapid mail
+  // Bloom Filter 
+  // AI currency converter package
+  // Load balancer nodejs
 ];

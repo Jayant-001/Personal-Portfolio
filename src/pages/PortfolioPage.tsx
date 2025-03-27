@@ -124,7 +124,7 @@ const PortfolioPage = () => {
         </div>
       </div>
     ),
-    profiles: (
+    coding: (
       <div className="space-y-6">
         <p className="text-yellow-400">$ ls coding-profiles/</p>
         <div className="pl-4 space-y-4">
