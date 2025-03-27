@@ -18,12 +18,14 @@ import { Project, projects } from "../data/projects";
 import { experiences } from "../data/experiences";
 import { profiles } from "../data/profiles";
 import { educations, skills, social } from "../data/personal_data";
+import {useNavigate} from "react-router-dom"
 
 const PortfolioPage = () => {
   const [text, setText] = useState("");
   const [currentCommand, setCurrentCommand] = useState(0);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [activeSection, setActiveSection] = useState("projects");
+  const navigate = useNavigate();
 
   const commands = [
     "Loading profile...",
@@ -329,6 +331,10 @@ const PortfolioPage = () => {
         <div className="flex items-center gap-2 mb-8">
           <Terminal className="w-6 h-6" />
           <span className="text-xl">portfolio@jayant:~$</span>
+          <span onClick={(e) => {
+            e.preventDefault();
+            navigate("themes")
+          }} className="opacity-0">Hello</span>
         </div>
 
         {/* Navigation */}
