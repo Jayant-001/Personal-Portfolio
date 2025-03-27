@@ -1,3 +1,6 @@
+import recommendationProject from "../assets/recommendation_system.png";
+import pocketLibrary from "../assets/pocket_library_project.gif";
+
 export interface Project {
   id: number;
   title: string;
@@ -11,6 +14,94 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: 2,
+    title: "CodeClash - Online Coding Assessment Platform",
+    shortDescription:
+      "A comprehensive platform for conducting coding assessments and competitions with real-time code execution, secure authentication, and anti-cheat measures.",
+    description: `CodeClash is an online coding assessment platform designed for coding competitions and assessments. It features secure real-time code execution, an anti-cheat system, and a leaderboard to track participant progress. The platform offers an admin portal for problem and contest management, a user platform for contest participation, and a robust code execution system with Docker isolation and queue management.`,
+    image: "https://example.com/screenshot.png",
+    technologies: [
+      "Node.js + Express",
+      "WebSockets",
+      "RabbitMQ",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "JWT",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "ShadcnUI",
+      "Turbo",
+    ],
+    features: [
+      "Admin Portal for problem and contest management",
+      "Contest participation with real-time status updates",
+      "Support for multiple programming languages",
+      "Anti-cheat system with tab detection and activity monitoring",
+      "Real-time leaderboard with performance analytics",
+      "Secure code execution with Docker isolation",
+      "Distributed job queue with BullMQ for efficient submission processing",
+    ],
+    demoUrl: "https://your-demo-link.com", // Update with your actual demo URL
+    githubUrl: "https://github.com/yourusername/CodeClash", // Replace with actual GitHub URL
+  },
+  {
+    id: 0,
+    title: "AI-Powered Post Recommendation System",
+    shortDescription:
+      "A full-stack web app that provides AI-powered post recommendations using vector embeddings for semantic search and content discovery.",
+    description:
+      "This project is a full-stack application that allows users to create, search, and discover related posts using AI-powered recommendations. It leverages vector embeddings to understand the semantic meaning of posts and provides similar content suggestions. The application enables users to filter content based on tags and their own preferences.",
+    image: recommendationProject,
+    technologies: [
+      "Next.js",
+      "Convex",
+      "VoyageAI",
+      "Langchain",
+      "TypeScript",
+      "TailwindCSS",
+    ],
+    features: [
+      "Semantic Search",
+      "AI-Powered Post Recommendations",
+      "Real-time Post Creation",
+      "Tag-based Organization",
+      "User-specific Content Filtering",
+    ],
+    githubUrl: "https://github.com/Jayant-001/Recommendation-System-NextJS",
+  },
+  {
+    id: 3,
+    title: "Pocket Library - An Interactive Quiz-Based Learning Platform",
+    shortDescription:
+      "A learning platform that makes learning easy and more competitive with quiz-based exercises for language learning and progress tracking.",
+    description: `Pocket Library is an interactive quiz-based learning platform that helps users practice and learn different languages. The platform offers features such as user authentication, performance tracking, a user leaderboard, and language preference selection. Admins can add new questions, and users can view detailed test reports to track their learning progress.`,
+    image: pocketLibrary,
+    technologies: [
+      "Next.js",
+      "React.js",
+      "TanStack Query",
+      "Prisma",
+      "MongoDB",
+      "Tailwind CSS",
+      "JavaScript",
+      "Toast by react-hot-toast",
+      "react-icons",
+    ],
+    features: [
+      "User authentication with JWT",
+      "Admin section for adding questions",
+      "Performance tracking page",
+      "User leaderboard",
+      "Track and reset progress from the user page",
+      "Choose your favorite language",
+      "Test reports for progress analysis",
+    ],
+    demoUrl: "https://pocket-library.vercel.app", // Link to live demo
+    githubUrl: "https://github.com/Jayant-001/Language-Learning-App", // GitHub repository URL
+  },
   {
     id: 1,
     title: "AI-Powered Code Review System",
@@ -97,7 +188,7 @@ export const projects: Project[] = [
       "Build my own Redis (client + server) with basic key-value store and data snapshoting functionality.",
     description:
       "A lightweight Redis clone built using Node.js with basic key-value store functionality. The project aims to demonstrate the core concepts of Redis and key-value stores.",
-    image: "",
+    image: recommendationProject,
     technologies: ["Node.js", "JavaScript", "http server"],
     features: [
       "In-memory key-value store",
@@ -106,6 +197,5 @@ export const projects: Project[] = [
       "Persistence using JSON file storage",
     ],
     githubUrl: "https://github.com",
-
   },
 ];
