@@ -18,7 +18,7 @@ import { Project, projects } from "../data/projects";
 import { experiences } from "../data/experiences";
 import { profiles } from "../data/profiles";
 import { educations, skills, social } from "../data/personal_data";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 const PortfolioPage = () => {
   const [text, setText] = useState("");
@@ -83,6 +83,16 @@ const PortfolioPage = () => {
           </div>
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-green-400">
+              <Brain className="w-4 h-4" /> Tools & Technologies
+            </div>
+            <ul className="pl-6 space-y-1 text-gray-300">
+              {skills.tools.map((tool, i) => (
+                <li key={i}>- {tool}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-green-400">
               <FerrisWheel className="w-4 h-4" /> Frameworks
             </div>
             <ul className="pl-6 space-y-1 text-gray-300">
@@ -107,16 +117,6 @@ const PortfolioPage = () => {
             </div>
             <ul className="pl-6 space-y-1 text-gray-300">
               {skills.cloud.map((tool, i) => (
-                <li key={i}>- {tool}</li>
-              ))}
-            </ul>
-          </div>
-          <div className="space-y-2">
-            <div className="flex items-center gap-2 text-green-400">
-              <Brain className="w-4 h-4" /> Tools & Technologies
-            </div>
-            <ul className="pl-6 space-y-1 text-gray-300">
-              {skills.tools.map((tool, i) => (
                 <li key={i}>- {tool}</li>
               ))}
             </ul>
@@ -288,7 +288,7 @@ const PortfolioPage = () => {
             </div>
             <div className="pl-6 space-y-2">
               {social
-              .filter(item => item.name !== 'Email')
+                .filter((item) => item.name !== "Email")
                 .map((social, index) => (
                   <div className="flex" key={index} title={social.url}>
                     <a
@@ -304,20 +304,20 @@ const PortfolioPage = () => {
                 ))}
             </div>
             <div className="pl-6 mt-2">
-                <span
-                  onClick={() =>
-                    window.open(
-                      `mailto:${social[social.length - 1].url}`,
-                      "_blank"
-                    )
-                  }
-                  rel="noopener noreferrer"
-                  className="cursor-pointer flex items-center gap-2 text-blue-400 hover:underline"
-                >
-                  <ExternalLink className="w-3 h-3" />
-                  {social[social.length - 1].name}
-                </span>
-              </div>
+              <span
+                onClick={() =>
+                  window.open(
+                    `mailto:${social[social.length - 1].url}`,
+                    "_blank"
+                  )
+                }
+                rel="noopener noreferrer"
+                className="cursor-pointer flex items-center gap-2 text-blue-400 hover:underline"
+              >
+                <ExternalLink className="w-3 h-3" />
+                {social[social.length - 1].name}
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -331,10 +331,15 @@ const PortfolioPage = () => {
         <div className="flex items-center gap-2 mb-8">
           <Terminal className="w-6 h-6" />
           <span className="text-xl">portfolio@jayant:~$</span>
-          <span onClick={(e) => {
-            e.preventDefault();
-            navigate("themes")
-          }} className="opacity-0">Hello</span>
+          <span
+            onClick={(e) => {
+              e.preventDefault();
+              navigate("themes");
+            }}
+            className="opacity-0"
+          >
+            Hello
+          </span>
         </div>
 
         {/* Navigation */}
