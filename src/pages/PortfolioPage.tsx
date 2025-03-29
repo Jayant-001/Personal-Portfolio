@@ -31,7 +31,7 @@ const PortfolioPage = () => {
     "Loading profile...",
     "Initializing skills database...",
     "Connecting to experience server...",
-    "Backend Developer | Java | MERN | GenAI",
+    "Jayant Gupta | Full Stack Backend Developer | Competitive Coder | Java | MERN | GenAI",
   ];
 
   useEffect(() => {
@@ -366,7 +366,7 @@ const PortfolioPage = () => {
             <span className="animate-pulse">_</span>
           </p>
 
-          {currentCommand >= commands.length &&
+          {currentCommand >= commands.length - 1 &&
             sections[activeSection as keyof typeof sections]}
         </div>
       </div>
