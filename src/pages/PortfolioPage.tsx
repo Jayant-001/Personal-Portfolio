@@ -239,6 +239,44 @@ const PortfolioPage = () => {
       <div className="space-y-6">
         <p className="text-yellow-400">$ contact --help</p>
         <div className="pl-4 space-y-6">
+        <div className="border border-green-400/30 p-4 rounded">
+            <div className="flex items-center gap-2 mb-4">
+              <Github className="w-4 h-4 text-green-400" />
+              <span className="text-green-400">Social Links</span>
+            </div>
+            <div className="pl-6 space-y-2">
+              {social
+                .filter((item) => item.name !== "Email")
+                .map((social, index) => (
+                  <div className="flex" key={index} title={social.url}>
+                    <a
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-400 hover:underline"
+                    >
+                      <ExternalLink className="w-3 h-3" />
+                      {social.name}
+                    </a>
+                  </div>
+                ))}
+            </div>
+            <div className="pl-6 mt-2">
+              <span
+                onClick={() =>
+                  window.open(
+                    `mailto:${social[social.length - 1].url}`,
+                    "_blank"
+                  )
+                }
+                rel="noopener noreferrer"
+                className="cursor-pointer flex items-center gap-2 text-blue-400 hover:underline"
+              >
+                <ExternalLink className="w-3 h-3" />
+                {social[social.length - 1].name}
+              </span>
+            </div>
+          </div>
           <div className="border border-green-400/30 p-4 rounded">
             <div className="flex items-center gap-2 mb-4">
               <Mail className="w-4 h-4 text-green-400" />
@@ -281,44 +319,7 @@ const PortfolioPage = () => {
             </form>
           </div>
 
-          <div className="border border-green-400/30 p-4 rounded">
-            <div className="flex items-center gap-2 mb-4">
-              <Github className="w-4 h-4 text-green-400" />
-              <span className="text-green-400">Social Links</span>
-            </div>
-            <div className="pl-6 space-y-2">
-              {social
-                .filter((item) => item.name !== "Email")
-                .map((social, index) => (
-                  <div className="flex" key={index} title={social.url}>
-                    <a
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-blue-400 hover:underline"
-                    >
-                      <ExternalLink className="w-3 h-3" />
-                      {social.name}
-                    </a>
-                  </div>
-                ))}
-            </div>
-            <div className="pl-6 mt-2">
-              <span
-                onClick={() =>
-                  window.open(
-                    `mailto:${social[social.length - 1].url}`,
-                    "_blank"
-                  )
-                }
-                rel="noopener noreferrer"
-                className="cursor-pointer flex items-center gap-2 text-blue-400 hover:underline"
-              >
-                <ExternalLink className="w-3 h-3" />
-                {social[social.length - 1].name}
-              </span>
-            </div>
-          </div>
+          
         </div>
       </div>
     ),
