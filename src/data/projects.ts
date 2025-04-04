@@ -73,6 +73,7 @@ export const projects: Project[] = [
       "User-specific Content Filtering",
     ],
     githubUrl: "https://github.com/Jayant-001/Recommendation-System-NextJS",
+    demoUrl: "https://www.youtube.com/watch?v=S3T91NniDhE"
   },
   {
     id: 4,
