@@ -1,7 +1,7 @@
 import recommendationProject from "../assets/recommendation_system.png";
 import pocketLibrary from "../assets/pocket_library_project.gif";
-import urlShortner from '../assets/url_shortner.avif'
-import pocketCloud from '../assets/pocket-cloud.png'
+import urlShortner from "../assets/url_shortner.avif";
+import pocketCloud from "../assets/pocket-cloud.png";
 
 export interface Project {
   id: number;
@@ -73,7 +73,7 @@ export const projects: Project[] = [
       "User-specific Content Filtering",
     ],
     githubUrl: "https://github.com/Jayant-001/Recommendation-System-NextJS",
-    demoUrl: "https://www.youtube.com/watch?v=S3T91NniDhE"
+    demoUrl: "https://www.youtube.com/watch?v=wvp3foHJtpo",
   },
   {
     id: 4,
@@ -125,7 +125,8 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "URL Shortener Project",
-    shortDescription: "A URL shortener web application that generates short links, provides analytics, and utilizes Redis caching for faster performance.",
+    shortDescription:
+      "A URL shortener web application that generates short links, provides analytics, and utilizes Redis caching for faster performance.",
     description: `The URL Shortener project allows users to generate short URLs for long links. It features Redis caching to improve performance and provides analytics to track the usage of short URLs. The application also ensures seamless redirection from short URLs to their corresponding long URLs.`,
     image: urlShortner, // Add an image URL if available
     technologies: [
@@ -140,22 +141,23 @@ export const projects: Project[] = [
       "nanoid",
       "MongoDB",
       "Redis",
-      "ESLint"
+      "ESLint",
     ],
     features: [
       "Short URL Generation",
       "Redis Caching for faster performance",
       "Seamless Redirection to long URLs",
       "Analytics for tracking clicks on short URLs",
-      "Environment Variable Configuration for Redis and MongoDB"
+      "Environment Variable Configuration for Redis and MongoDB",
     ],
     demoUrl: "https://shorturl-01.vercel.app", // Live demo URL
-    githubUrl: "https://github.com/Jayant-001/URL-Shortener" // GitHub repository URL
+    githubUrl: "https://github.com/Jayant-001/URL-Shortener", // GitHub repository URL
   },
   {
     id: 5,
     title: "Pocket Cloud - Cloud File Manager",
-    shortDescription: "A cutting-edge cloud file management platform that enables seamless file organization, upload, and management with Google authentication.",
+    shortDescription:
+      "A cutting-edge cloud file management platform that enables seamless file organization, upload, and management with Google authentication.",
     description: `Pocket Cloud is a web application designed to streamline file and folder management on the cloud. With features like folder creation, file upload, nested folder organization, Google authentication, and easy file management, Pocket Cloud provides an intuitive and efficient way to handle your digital assets.`,
     image: pocketCloud,
     technologies: [
@@ -165,7 +167,7 @@ export const projects: Project[] = [
       "NextAuth",
       "Google OAuth",
       "Tailwind CSS",
-      "DaisyUI"
+      "DaisyUI",
     ],
     features: [
       "Folder Creation and File Upload",
@@ -173,10 +175,10 @@ export const projects: Project[] = [
       "Usage Limits and File Categorization",
       "Google Authentication for secure login",
       "File Management: Delete and Download files",
-      "User-friendly UI designed with DailyUI principles"
+      "User-friendly UI designed with DailyUI principles",
     ],
     demoUrl: "https://pocket-cloud.vercel.app", // Demo link
-    githubUrl: "https://github.com/Jayant-001/Cloud-File-Manager" // GitHub repository link
+    githubUrl: "https://github.com/Jayant-001/Cloud-File-Manager", // GitHub repository link
   },
   {
     id: 1,
@@ -258,7 +260,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/yourusername/cloud-platform",
   },
   // Rapid mail
-  // Bloom Filter 
+  // Bloom Filter
   // AI currency converter package
   // Load balancer nodejs
 ];
