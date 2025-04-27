@@ -2,6 +2,7 @@ import recommendationProject from "../assets/recommendation_system.png";
 import pocketLibrary from "../assets/pocket_library_project.gif";
 import urlShortner from "../assets/url_shortner.avif";
 import pocketCloud from "../assets/pocket-cloud.png";
+import aiMedicalReportSimplifier from "../assets/ai_medical_report_simplifier_ss.png"
 
 export interface Project {
   id: number;
@@ -91,6 +92,34 @@ export const projects: Project[] = [
       "Persistence using JSON file storage",
     ],
     githubUrl: "https://github.com",
+  },
+  {
+    id: 6,
+    title: "AI Medical Report Simplifier",
+    shortDescription:
+      "A web app that transforms complex medical reports into easy-to-understand, interactive documents with AI-powered explanations for every medical term.",
+    description: `Medical Report Simplifier is a Flask-based web application that leverages Google Gemini AI to make medical reports accessible to everyone. Users can paste any medical report, and the app will analyze, reformat, and highlight all medical terms, providing plain-language explanations for each. The output is a visually appealing, interactive HTML report where users can hover or click on terms to see concise, context-aware definitions. This tool is ideal for patients, caregivers, or anyone who wants to better understand medical documents without needing a medical background.`,
+    image: aiMedicalReportSimplifier,
+    technologies: [
+      "Flask",
+      "Python",
+      "Google Gemini AI",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "dotenv",
+    ],
+    features: [
+      "Paste and process any medical report instantly",
+      "AI-powered identification and explanation of medical terms",
+      "Interactive HTML output with hover/click explanations for terms",
+      "Responsive and modern user interface",
+      "No user authentication required—just paste and simplify",
+      "Custom prompt engineering for consistent, high-quality results",
+      "Secure API key management with dotenv",
+    ],
+    demoUrl: "https://jayant139.pythonanywhere.com",
+    githubUrl: "https://github.com/Jayant-001/Medical-Report-Simplifier",
   },
   {
     id: 3,

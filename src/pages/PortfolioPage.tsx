@@ -195,7 +195,7 @@ const PortfolioPage = () => {
               onClick={() => setSelectedProject(project)}
             >
               <h3 className="text-green-400 font-bold mb-2">{project.title}</h3>
-              <p className="text-gray-300 mb-2">{project.shortDescription}</p>
+              <p className="text-gray-300 mb-2">{project.shortDescription} <br/> <span className="text-green-300 hover:underline">Read more</span></p>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.slice(0, 3).map((tech, i) => (
                   <span key={i} className="text-blue-400">
